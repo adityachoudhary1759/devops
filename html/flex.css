@@ -1,0 +1,24 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 80vw;
+    height: 60vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(145, 145, 252);
+}
+
+.box{
+    border: 1px solid salmon;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(227, 166, 160);
+    display: grid;
+    grid
+}

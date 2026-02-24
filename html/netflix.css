@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.main-header-left{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+header img{
+    width: 110px;
+}
+header ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    transition:color .5s ease ;
+}
+header ul>li>a:hover{
+    color: rgba(255, 255, 255, 0.468);
+}
+.hero-section{
+    height: 100vh;
+    position: relative;
+}
+.hero-section video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    gap: 20px;
+}
+
+.upper-main h1{
+    font-size: 5vw;
+    color: red;
+    font-family: "benguiat* bold";
+}
+.upper-main p{
+    max-width: 500px;
+    font-size: 18px;
+    color: white;
+}
+
+.btn{
+    padding: 10px 18px;
+    border-style: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: 700;
+}
+.btn span{
+    margin-right: 10px;
+}
+.btn-2{
+    background-color: rgba(128, 128, 128, 0.477);
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(215, 205, 205);
+}
+
+.scroll-section{
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 40px 0;
+}
+.scroll-section>h1{
+    color: red;
+    margin-left: 30px
+}
+.scroll-main-vdo{
+    width: 100vw;
+    height: 200px;
+    overflow-x: scroll; 
+    scrollbar-width: none;
+    background-color: seashell;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.vdo-scroll{
+    width: 300px;
+    height: 180px;
+    background-color: rgb(172, 140, 140);
+    flex-shrink: 0;
+    flex-wrap: 0;
+}
+.vdo-scroll:hover{
+    transform: scale(1.1);
+    transition: transform .2s ease-in;
+}
+.vdo-scroll>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
